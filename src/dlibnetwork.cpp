@@ -73,7 +73,8 @@ void DlibNetwork::trainDNN()
 		list.push_back(load_truth_instances(m_imageInfo[i]));
 	}
 	Logger->trace("list.size():{}", list.size());
-
+	Logger->info("DlibNetwork::trainDNN() start training DNN with learningRate:{}", m_learningRate);
+	
 	net_type segb = train_segmentation_network(list, m_det_minibatch_size, m_imageSize, m_queqe, m_synch_name, m_useTwoCUDA, m_learningRate);
 
 	std::cout << "Saving networks" << endl;

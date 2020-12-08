@@ -31,6 +31,8 @@ int main(int argc, char** argv) try
 	}
 	delete configReader;
 
+	Logger->set_level(static_cast<spdlog::level::level_enum>(m_config[GENERAL].toObject()["LogLevel"].toInt()));
+
 #ifdef _WIN32
 	QJsonObject jDataset{ m_config[DATASET_WIN].toObject() };
 #endif // _WIN32

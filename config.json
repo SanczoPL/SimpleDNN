@@ -10,8 +10,9 @@
 		"ConfigName": "config.json"
 	},
 	"DatasetUnix": {
-		
-		"PathToDataset": "E:\\repo\\Dron\\gt-anntate-test\\",
+		"input" : "/home/user/repo/gt-anntate-test/input/",
+		"gt_temp" : "/home/user/repo/gt-anntate-test/gt_temp/",
+		"PathToDataset": "/home/user/repo/gt-anntate-test/",
 		"ConfigName": "config.json"
 	},
 	"DNN":{

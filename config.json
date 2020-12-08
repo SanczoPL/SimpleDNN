@@ -1,0 +1,32 @@
+{
+	"General":
+	{
+		"LogLevel" :0
+	},
+	"DatasetWin": {
+		"input" : "E:\\repo\\Dron\\gt-anntate-test\\input",
+		"gt_temp" : "E:\\repo\\Dron\\gt-anntate-test\\gt_temp",
+		"PathToDataset": "E:\\repo\\Dron\\gt-anntate-test\\",
+		"ConfigName": "config.json"
+	},
+	"DatasetUnix": {
+		
+		"PathToDataset": "E:\\repo\\Dron\\gt-anntate-test\\",
+		"ConfigName": "config.json"
+	},
+	"DNN":{
+		"ThreadsMax": 20,
+		"Standalone": false,
+		"MinibatchSize": 45,
+		"ImageSize": 251,
+		"Queqe": 100,
+		"DnnName" : "network.dnn",
+		"SynchName": "train.dat",
+		"UseTwoCUDA" :  false,
+		"LearningRate" : 0.001
+	}
+}
+
+
+
+
